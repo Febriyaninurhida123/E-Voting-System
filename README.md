@@ -1540,7 +1540,7 @@ h2 {
 ```
 
 ### outputnya :
-![image](ss11.png)
+![image](logout.png)
 
 # setelah logout akan kembali ke tampilan log-in admin
 ![image](ss12.png)
