@@ -7,7 +7,7 @@ TI.22.A2
 
 # Berikut adalah program yang sudah saya buat:
 ## E-Voting System
-### 1. Login voter
+### Login voter
 ```
 <!DOCTYPE html>
 <html>
