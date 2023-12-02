@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<style>
+    /* Add your custom styles here */
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .navbar {
+        background-color: rgb(136, 209, 255);
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+        margin-right: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    .admin-dashboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0;
+        background-color: #f8f9fa;
+    }
+
+    .dashboard-content {
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .dashboard-img {
+        max-width: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .dashboard-content h2 {
+        margin-bottom: 20px;
+    }
+
+    .dashboard-section-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 800px;
+    }
+
+    .dashboard-section {
+        text-align: left;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        flex: 0 1 300px;
+    }
+
+    .dashboard-section h3 {
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        background-color: rgb(136, 209, 255);
+        color: #000000;
+        border: 1px solid white;
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-primary:hover {
+        background-color: rgb(136, 209, 255);
+        color: #ffffff;
+    }
+
+    .footer-bawah {
+        background-color: rgb(136, 209, 255);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="py-2 navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images.png" alt="logo" class="logo pb-1">
+                E-Voting
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-result.html">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-logout.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Dashboard Section -->
+    <section class="admin-dashboard">
+        <div class="dashboard-content">
+            <img src="admin.png" alt="Logo" class="dashboard-img">
+            <h2>Welcome to the Admin Dashboard</h2>
+            <p>Manage the E-Voting system efficiently from this dashboard.</p>
+        </div>
+
+        <!-- Action Sections -->
+        <div class="dashboard-section-container">
+            <div class="dashboard-section">
+                <h3>Candidate Management</h3>
+                <p>Manage and add candidates for the election.</p>
+                <a href="admin-manage-candidates.html" class="btn btn-primary">Manage Candidates</a>
+            </div>
+
+            <div class="dashboard-section">
+                <h3>Voter Management</h3>
+                <p>Manage registered voters for the election.</p>
+                <a href="admin-manage-voters.html" class="btn btn-primary">Manage Voters</a>
+            </div>
+
+            <div class="dashboard-section">
+                <h3>Election Results</h3>
+                <p>View and analyze the election results.</p>
+                <a href="admin-view-results.html" class="btn btn-primary">View Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-bawah">
+        <p>Developed by Febriyani Nurhida</p>
+    </div>
+    <!-- END Footer -->
+
+</body>
+
+</html>

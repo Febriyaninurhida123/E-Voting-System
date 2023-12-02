@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting - Admin Results</title>
+    <!-- Add your stylesheets and other meta tags if needed -->
+</head>
+<style>
+/* Add your common styles here */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    background-color: rgb(136, 209, 255);
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.admin-results {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.results-content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(136, 209, 255);
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(136, 209, 255);
+    color: #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+</style>
+<body>
+
+    <!-- Admin Navigation (You may have a common navigation for all admin pages) -->
+    <nav>
+        <ul>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-manage-candidates.html">Manage Candidates</a></li>
+            <li><a href="admin-manage-voters.html">Manage Voters</a></li>
+            <li><a href="admin-view-results.html">View Results</a></li>
+            <li><a href="admin-logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Admin Results Section -->
+    <section class="admin-results">
+        <div class="results-content">
+            <h2>Election Results</h2>
+
+            <!-- Display Results Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Candidate Name</th>
+                        <th>Total Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample data, replace with actual results from your system -->
+                    <tr>
+                        <td>Candidate 1</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td>Candidate 2</td>
+                        <td>950</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+
+            <!-- Additional Result Statistics or Charts can be added here -->
+
+            <!-- Back to Dashboard Button -->
+            <a href="admin-dashboard.html" class="btn btn-primary">Back to Dashboard</a>
+        </div>
+    </section>
+    <!-- END Admin Results Section -->
+
+    <!-- Add your scripts or other footer content if needed -->
+
+</body>
+
+</html>

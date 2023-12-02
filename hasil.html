@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting - Hasil</title>
+    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<style>
+    /* Add your custom styles here */
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .navbar {
+        background-color: rgb(136, 209, 255);
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+        margin-right: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    .btn-light {
+        background-color: rgb(136, 209, 255);
+        color: #000000;
+        border: 1px solid white;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .btn-light:hover {
+        background-color: rgb(136, 209, 255);
+        color: #ffffff;
+    }
+
+    #hero {
+        padding: 80px 0;
+        background-color: #f8f9fa;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+        color: #333;
+    }
+
+    #hasil {
+        padding: 80px 0;
+        background-color: #ffffff;
+    }
+
+    .result-content {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .footer-bawah {
+        background-color: rgb(136, 209, 255);
+        color: white;
+        padding: 20px 0;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="py-2 navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images.png" alt="logo" class="logo pb-1">
+                E-Voting
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="voting.html">Voting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="hasil.html">Hasil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-login.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END Navbar -->
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="row justify-content-center align-items-center"> <!-- Center both horizontally and vertically -->
+                <div class="col text-center">
+                    <h2>Election Results</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Hero Section -->
+
+    <!-- Hasil Section -->
+    <section id="hasil">
+        <div class="container">
+            <div class="result-content">
+                <!-- Your election results content goes here -->
+                <p>Result 1: Candidate A - Votes: XXX</p>
+                <p>Result 2: Candidate B - Votes: XXX</p>
+                <p>Result 3: Candidate C - Votes: XXX</p>
+                <!-- Add more results as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- END Hasil Section -->
+
+    <!-- Footer -->
+    <div class="text-center p-3 footer-bawah">
+        <h5>Developed by</h5>
+        <p><small>Febriyani Nurhida</small></p>
+    </div>
+    <!-- END Footer -->
+
+</body>
+
+</html>

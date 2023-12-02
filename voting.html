@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting - Voting</title>
+    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<style>
+   /* Add your custom styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+</style> 
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Voting Page</h1>
+        </div>
+
+        <div class="form-container">
+            <form action="#" method="post" id="votingForm">
+                <div class="form-group">
+                    <label for="candidate">Choose Candidate:</label>
+                    <select id="candidate" name="candidate" required>
+                        <option value="suthanos">Suthanos</option>
+                        <option value="tony">Tony Sutorak</option>
+                        <option value="hulak">Hulak</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="vote-comment">Comments (optional):</label>
+                    <input type="text" id="vote-comment" name="vote-comment">
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Vote Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            // You can add validation or other actions before submitting the form
+            document.getElementById('votingForm').submit();
+        }
+    </script>
+</body>
+
+</html>

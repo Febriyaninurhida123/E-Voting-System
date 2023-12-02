@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Voters - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/manage_voters_style.css"> <!-- Add your CSS file for this specific page -->
+</head>
+<style>
+    /* Add your custom styles for the manage voters page here */
+
+.admin-manage-voters {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.voter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.voter-item {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.voter-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid #dc3545;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.footer-bawah {
+    background-color: rgb(136, 209, 255);
+    color: white;
+    padding: 20px 0;
+}
+
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="py-2 navbar navbar-expand-lg fixed-top">
+        <!-- Navbar content goes here -->
+    </nav>
+
+    <!-- Page Content -->
+    <section class="admin-manage-voters">
+        <div class="container">
+            <h2>Voter Management</h2>
+
+            <!-- Voter List -->
+            <div class="voter-list">
+                <!-- Sample voter item, you can repeat this block for each voter -->
+                <div class="voter-item">
+                    <img src="2.jpg" alt="Voter Photo">
+                    <h3>Jane Smith</h3>
+                    <p>Email: jane@example.com</p>
+                    <p>Registered Since: January 1, 2022</p>
+                    <button class="btn btn-danger">Remove</button>
+                </div>
+
+                <!-- Add more voter items as needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-bawah">
+        <p>
+            Developed By Febriyani Nurhida
+        </p>
+    </div>
+
+</body>
+
+</html>

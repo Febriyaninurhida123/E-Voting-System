@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Candidates - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/manage_candidates_style.css"> <!-- Add your CSS file for this specific page -->
+</head>
+<style>
+    /* Add your custom styles for the manage candidates page here */
+/* Add your custom styles for the manage candidates page here */
+
+.admin-manage-candidates {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.candidate-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.candidate-item {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.candidate-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.add-candidate-form {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.add-candidate-form h3 {
+    margin-bottom: 20px;
+}
+
+.add-candidate-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.add-candidate-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-candidate-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-candidate-form button {
+    background-color: rgb(136, 209, 255);
+    color: #000000;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-candidate-form button:hover {
+    background-color: rgb(136, 209, 255);
+    color: #ffffff;
+}
+
+
+</style>
+<body>
+
+    <!-- Navbar -->
+    <nav class="py-2 navbar navbar-expand-lg fixed-top">
+        <!-- Navbar content goes here -->
+    </nav>
+
+    <!-- Page Content -->
+    <section class="admin-manage-candidates">
+        <div class="container">
+            <h2>Candidate Management</h2>
+
+            <!-- Candidate List -->
+            <div class="candidate-list">
+                <!-- Sample candidate item, you can repeat this block for each candidate -->
+                <div class="candidate-item">
+                    <img src="kandidat1.jpeg" alt="Candidate Photo">
+                    <h3>John Doe</h3>
+                    <p>Party: XYZ Party</p>
+                    <button class="btn btn-danger">Delete</button>
+                </div>
+
+                <!-- Add more candidate items as needed -->
+
+            </div>
+
+            <!-- Add Candidate Form -->
+            <div class="add-candidate-form">
+                <h3>Add New Candidate</h3>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label for="candidateName">Candidate Name:</label>
+                    <input type="text" id="candidateName" name="candidateName" required>
+
+                    <label for="party">Party:</label>
+                    <input type="text" id="party" name="party" required>
+
+                    <label for="photo">Candidate Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                    <button type="submit" class="btn btn-primary">Add Candidate</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-bawah">
+        <!-- Footer content goes here -->
+    </div>
+
+</body>
+
+</html>

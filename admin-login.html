@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting - Admin Login</title>
+    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<style>
+    /* Add your custom styles here */
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .admin-login {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+    }
+
+    .login-box {
+        max-width: 400px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .login-box .form-group {
+        margin-bottom: 20px;
+    }
+
+    .login-box label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .login-box button {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        background: rgb(136, 209, 255);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .login-box button:hover {
+        background: #4578a0;
+    }
+
+    .footer-bawah {
+        background-color: rgb(136, 209, 255);
+        color: white;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <!-- Admin Login Section -->
+    <section class="admin-login">
+        <div class="login-box">
+            <h2>Admin Login</h2>
+            <form action="admin-dashboard.html" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+    <!-- END Admin Login Section -->
+
+    <!-- Footer -->
+    <div class="footer-bawah">
+        <p>Developed by Febriyani Nurhida</p>
+    </div>
+    <!-- END Footer -->
+
+</body>
+
+</html>
